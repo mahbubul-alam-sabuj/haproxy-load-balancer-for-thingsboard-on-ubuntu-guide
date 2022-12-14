@@ -213,12 +213,10 @@ cat <<EOT | sudo tee /usr/bin/certbot-renew
 
 /usr/bin/certbot -c /usr/local/etc/letsencrypt/cli.ini renew "\$@"
 EOT
-
 ```
 
 ```bash
 sudo chmod +x /usr/bin/haproxy-refresh /usr/bin/certbot-certonly /usr/bin/certbot-renew
-
 ```
 
 #### **Install certificates auto renewal cron job:**
@@ -251,7 +249,7 @@ sudo service haproxy restart
 
 #### **Execute command to get generate certificate using Let’s Encrypt:**
 
-Replace your_domain and your_email before executing the command below. Email is option so if you want you can remove that part.
+Replace your_domain and your_email before executing the command below. Email is optional so if you want you can remove that part.
 
 > **IMPORTANT:** If the command below fails multiple time then you may face cooldown which will get reset after an hour or two. so try to run the command with `--dry-run` flag to make sure if everything is working or not.
 
