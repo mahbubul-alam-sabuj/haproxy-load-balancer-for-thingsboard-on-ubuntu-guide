@@ -10,7 +10,7 @@
 #### **Connect to your ThingsBoard instance over SSH:**
 
 ```bash
-ssh USER_NAME@IP
+ssh YOUR_USER_NAME@HOST_IP_ADDRESS
 ```
 
 #### **Install HAProxy Load Balancer package:**
