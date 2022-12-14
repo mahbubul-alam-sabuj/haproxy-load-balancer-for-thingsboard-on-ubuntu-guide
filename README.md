@@ -1,7 +1,5 @@
 # **Install HAProxy Load Balancer for ThingsBoard on Ubuntu**
 
----
-
 #### **Prerequisites:**
 
 - Ubuntu 18.04 / Ubuntu 20.04 with a valid domain name(ex: example.com) is assigned to the instance. <br/>
