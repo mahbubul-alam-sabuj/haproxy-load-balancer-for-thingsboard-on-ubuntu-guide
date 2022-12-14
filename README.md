@@ -263,3 +263,29 @@ Finally restart HAProxy:
 ```bash
 sudo haproxy-refresh
 ```
+
+To see all SSL certificates issued by certbot:
+
+```bash
+sudo certbot certificates
+```
+
+#### **If you want to delete a certificate by domain name(which should be pointed to your thingsboard instance) and generate another certificate:**
+
+```bash
+sudo certbot delete --cert-name your_domain_name
+```
+
+> **INFO:** delete just deletes the certificate files on your server. The certificate itself remains valid. If the web server is still running and uses cached/loaded certificate and keys then deleting the certificate has no effect until you restart the server or reload your site config. also there might be ISP cache as well for which the certificate remains valid.
+
+and generate another certificate:
+
+```bash
+sudo certbot-certonly --domain your_domain --email your_email
+```
+
+and restart HAProxy:
+
+```bash
+sudo haproxy-refresh
+```
