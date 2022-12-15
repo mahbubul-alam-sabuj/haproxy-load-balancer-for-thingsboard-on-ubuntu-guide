@@ -270,7 +270,7 @@ To see all SSL certificates issued by certbot:
 sudo certbot certificates
 ```
 
-#### **If you want to delete a certificate by domain name(which should be pointed to your thingsboard instance) and generate another certificate:**
+#### **If you want to delete a certificate by domain name and generate another certificate with another domain name(which should be pointed to your thingsboard instance):**
 
 ```bash
 sudo certbot delete --cert-name your_domain_name
