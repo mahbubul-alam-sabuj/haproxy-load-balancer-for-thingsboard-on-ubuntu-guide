@@ -278,7 +278,7 @@ sudo certbot delete --cert-name your_domain_name
 ***Also you need to delete the certificate from /usr/share/tb-haproxy/certs.d***
 
 ```bash
-sudo rm -rf /usr/share/tb-haproxy/certs.d/*
+sudo rm /usr/share/tb-haproxy/certs.d/cert_name
 ```
 > **INFO:** delete just deletes the certificate files on your server. The certificate itself remains valid. If the web server is still running and uses cached/loaded certificate and keys then deleting the certificate has no effect until you restart the server or reload your site config. also there might be ISP cache as well for which the certificate remains valid.
 
